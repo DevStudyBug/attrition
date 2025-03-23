@@ -1,0 +1,76 @@
+python --version
+cd "C:\Users\Anshika Dubey\Desktop\Major project sem 7\attriation\employee flask\employee\Employee-Attrition-Prediction-code"
+ pip install -r requirements.txt
+ python app.py
+
+chnage port for runging code 
+terminal >>
+set FLASK_APP=app.py
+>> flask run --port=8000\
+
+change app.py code 
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000, debug=True)
+
+Your Authtoken
+This is your personal Authtoken. Use this to authenticate the ngrok agent that you downloaded.
+2tczvlhgcUZZSmFJmbWSYHTpA93_2PyRFW7iB93zzvpmLEkXX    
+
+C:\ngrok>  cmd navigate to here 
+ngrok code
+ CK7WCUXGMK
+4WJDQ9SCUU
+2QNGPQ64DC
+Y5ZA4W64XV
+56MBQ2XE9G
+8JXUNDC4ZX
+3AJCYBP6NN
+4PQX7TZKFP
+4AEPAAP7G2
+KYEADJC4B6
+
+choco install ngrok
+Run the following command to add your authtoken to the default ngrok.yml configuration file.
+ngrok config add-authtoken 2tczvlhgcUZZSmFJmbWSYHTpA93_2PyRFW7iB93zzvpmLEkXX
+Put your app online at an ephemeral domain forwarding to your upstream service. For example, if it is listening on port http://localhost:8080, run:
+ngrok http http://localhost:8080
+
+here is complete steps 
+from flask_ngrok import run_with_ngrok
+
+run_with_ngrok(app)
+
+if __name__ == "__main__":
+    app.run ()  here remove debugger if its present there 
+
+now sign in to ngrok get your authtoken
+download zip extract it in C:\ngrok
+set the path setx PATH "%PATH%;C:\ngrok" in cmd or 
+Option 2: Manually Set Path
+Press Win + R, type sysdm.cpl, and press Enter.
+Go to the Advanced tab → Click Environment Variables.
+Under System Variables, find Path, select it, and click Edit.
+Click New and add:
+makefile
+Copy
+Edit
+C:\ngrok
+Click OK on all windows and restart your computer.
+
+ngrok --version
+
+ngrok config add-authtoken YOUR_AUTHTOKEN
+Run the following command in your Command Prompt (cmd):
+
+Edit
+ngrok config add-authtoken 2tczvlhgcUZZSmFJmbWSYHTpA93_2PyRFW7iB93zzvpmLEkXX
+After this, you can start a tunnel by running:
+
+Edit
+ngrok http 5000  use python app.py 
+ Running on http://d25a-103-123-226-186.ngrok-free.app  
+ tap visit site and say wowooooo
+
+Web Interface    http://127.0.0.1:4040  [view here copy on your chrome]
+Forwarding      https://d25a-103-123-226-186.ngrok-free.app -> http://localhost:5000  
+simple view your project now :) stay happy with anshika >..<
